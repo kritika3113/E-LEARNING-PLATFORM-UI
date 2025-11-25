@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Course — Edutrack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="edu">Edu</span><span class="track">track</span></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="primary-nav" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="progress.html">Progress</a>
+        <a href="progress.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="page-title">Featured Courses</h2>
+    <div class="course-hero">
+      <div>
+        <div class="course-card">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+            <div>
+              <div id="course-title" style="font-size:1.25rem;font-weight:700">Course title</div>
+              <div id="course-author" class="small text-muted">Author • duration</div>
+            </div>
+            <a href="index.html" class="outline">Back</a>
+          </div>
+
+          <div id="course-progress" style="margin-bottom:12px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+              <div class="small text-muted">Progress</div>
+              <div id="course-progress-pct" class="small">0%</div>
+            </div>
+            <div class="progress-wrap"><div class="progress" style="width:0"></div></div>
+          </div>
+
+          <div id="course-desc" class="small text-muted">Course description</div>
+        </div>
+
+        <h3 style="margin-top:16px">Video</h3>
+        <div class="video" id="video-embed"></div>
+      </div>
+
+      <aside>
+        <div class="course-card rating-card">
+          <h3 class="rating-title">Rate this course</h3>
+          <p class="small text-muted" style="margin-bottom:12px">Share quick feedback to keep your learning streak glowing.</p>
+          <div class="rating-stars" id="rating-stars" role="radiogroup" aria-label="Course rating">
+            <button type="button" class="rating-star" role="radio" data-value="1" aria-label="1 star" aria-checked="false" tabindex="0"><span aria-hidden="true">★</span></button>
+            <button type="button" class="rating-star" role="radio" data-value="2" aria-label="2 stars" aria-checked="false" tabindex="-1"><span aria-hidden="true">★</span></button>
+            <button type="button" class="rating-star" role="radio" data-value="3" aria-label="3 stars" aria-checked="false" tabindex="-1"><span aria-hidden="true">★</span></button>
+            <button type="button" class="rating-star" role="radio" data-value="4" aria-label="4 stars" aria-checked="false" tabindex="-1"><span aria-hidden="true">★</span></button>
+            <button type="button" class="rating-star" role="radio" data-value="5" aria-label="5 stars" aria-checked="false" tabindex="-1"><span aria-hidden="true">★</span></button>
+          </div>
+          <div class="rating-status small" id="rating-status">Not rated yet</div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">© Edutrack — Demo eLearning UI</div></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
