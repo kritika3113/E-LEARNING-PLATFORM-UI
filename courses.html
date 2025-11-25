@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>All Courses — Edutrack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="edu">Edu</span><span class="track">track</span></a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav id="primary-nav" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="courses.html" class="active">Courses</a>
+        <a href="progress.html">Progress</a>
+        <a href="progress.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="hero" style="grid-template-columns:1fr;">
+      <div class="hero-left" style="padding-right:0">
+        <h1><strong>Browse All Courses</strong></h1>
+        <p class="small">Select a course to view modules and start learning.</p>
+      </div>
+    </section>
+    <section>
+      <h2 class="section-title">Course Catalog</h2>
+      <div id="courses" class="grid"></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container">© Edutrack — Demo eLearning UI</div></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
