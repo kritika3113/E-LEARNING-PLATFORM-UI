@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edutrack — Courses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a class="brand" href="index.html"><span class="edu">Edu</span><span class="track">track</span></a>
+                <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                <nav id="primary-nav" class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="progress.html">Progress</a>
+                    <a href="progress.html#contact">Contact</a>
+                </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-left">
+                <h1><strong>Master In-Demand Skills. Learn At Your Own Pace.</strong></h1>
+                <p class="small">Explore Our Course Catalog</p>
+                <p class="small" style="margin-top:12px">Access high-quality, embedded video lessons that you can pause, rewind, and watch anytime.</p>
+            </div>
+            <div class="hero-right">
+                <img class="hero-img" src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=1400&q=80" alt="Developer writing code on laptop">
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Featured Courses</h2>
+            <div id="courses" class="grid"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">© Edutrack — Demo eLearning UI</div>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
