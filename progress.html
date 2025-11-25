@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Progress — Edutrack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="edu">Edu</span><span class="track">track</span></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="primary-nav" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="progress.html" class="active">Progress</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="grid-template-columns:1fr;">
+      <div class="hero-left" style="padding-right:0">
+        <h1><strong>Your Progress</strong></h1>
+        <p class="small">Track how much of each course you have completed. This data is stored only in your browser.</p>
+        <p id="overall-progress" class="small" style="margin-top:8px;font-weight:600">Overall Average Progress: 0%</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Courses</h2>
+      <div id="profile-list" class="grid"></div>
+    </section>
+
+    <section style="margin-top:18px">
+      <button id="reset-all" class="outline">Reset All Progress</button>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2 class="section-title contact-title">Get In Touch</h2>
+      <p class="contact-copy">Have a question or want to collaborate? Drop me a line anytime.</p>
+      <div class="contact-actions">
+        <a class="btn contact-btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=kritikasharma31013v@gmail.com" target="_blank" rel="noopener">Email Me</a>
+        <span class="contact-email small">kritikasharma31013v@gmail.com</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">© Edutrack — Demo eLearning UI</div></footer>
+  <script src="app.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+      const btn = document.getElementById('reset-all');
+      if(btn){
+        btn.addEventListener('click', ()=>{
+          if(confirm('Reset progress for all courses?')){
+            COURSES.forEach(c=>{
+              localStorage.removeItem('course_progress_'+c.id);
+              localStorage.removeItem('course_playback_'+c.id);
+              localStorage.removeItem('course_rating_'+c.id);
+            });
+            location.reload();
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
