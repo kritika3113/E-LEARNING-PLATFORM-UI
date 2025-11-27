@@ -26,3 +26,5 @@ EduTrack is a very lightweight front-end project that shows a list of programmin
 ## OUTPUT
 
 ![Image](https://github.com/user-attachments/assets/9b9a80b9-438f-49c7-9467-10bbc6215bc8)
+
+![Image](https://github.com/user-attachments/assets/cc0354ec-6cd0-49a6-94c6-efa4ca815ba9)
