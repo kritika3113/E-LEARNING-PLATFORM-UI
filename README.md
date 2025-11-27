@@ -22,3 +22,7 @@ EduTrack is a very lightweight front-end project that shows a list of programmin
 ### Running the Project Locally
 1. Open the folder in VS Code or any editor.
 2. Double-click `index.html` to view it in your browser.
+
+## OUTPUT
+
+![Image](https://github.com/user-attachments/assets/9b9a80b9-438f-49c7-9467-10bbc6215bc8)
