@@ -2,7 +2,7 @@
 # Author & Internship Details
 Company: CODTECH IT SOLUTIONS<br>
 Name: KRITIKA SHARMA<br>
-Intern ID: CTO8DR78<br>
+Intern ID: CT08DR78<br>
 Domain: Front-End Development<br>
 Duration: 8 Weeks<br>
 Mentor: NEELA SANTOSH<br>
